@@ -1,0 +1,114 @@
+﻿@page "/registro"
+@rendermode InteractiveServer
+@layout LayaoutVacio
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<div class="registro-container">
+
+    <div class="registro">
+
+        <div class="registro-icon">
+        </div>
+
+        <h1>Crear cuenta</h1>
+
+        <p>Regístrate para disfrutar de Cine colombia</p>
+
+        <div class="grupo_formulario">
+
+            <label>Nombre</label>
+
+            <input @bind="nombre"
+                   type="text"
+                   placeholder="Ingresa tu nombre" />
+
+        </div>
+
+        <div class="grupo_formulario">
+
+            <label>Correo</label>
+
+            <input @bind="correo"
+                   type="email"
+                   placeholder="Ingresa tu correo" />
+
+        </div>
+
+        <div class="grupo_formulario">
+
+            <label>Contraseña</label>
+
+            <input @bind="contraseña"
+                   type="password"
+                   placeholder="Crea una contraseña" />
+
+        </div>
+
+        @if (!string.IsNullOrEmpty(mensaje))
+        {
+            <div class="mensaje">
+                @mensaje
+            </div>
+        }
+
+        <button @onclick="Registrar">
+            Crear cuenta
+        </button>
+        <hr/>
+        <div class="volver-login">
+
+            ¿Ya tienes una cuenta?
+
+            <a href="/login">
+                Inicia sesión
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+
+    private string nombre = "";
+    private string correo = "";
+    private string contraseña = "";
+
+    private string mensaje = "";
+
+    private async Task Registrar()
+    {
+        mensaje = "";
+
+        if (string.IsNullOrWhiteSpace(nombre) ||
+            string.IsNullOrWhiteSpace(correo) ||
+            string.IsNullOrWhiteSpace(contraseña))
+        {
+            mensaje = "Todos los campos son obligatorios.";
+            return;
+        }
+
+        var datos = new
+        {
+            Nombre = nombre,
+            Correo = correo,
+            Contraseña = contraseña
+        };
+
+        var respuesta = await Http.PostAsJsonAsync(
+            "api/Usuario/registro",
+            datos
+        );
+
+        if (respuesta.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/peliculas");
+        }
+        else
+        {
+            mensaje = await respuesta.Content.ReadAsStringAsync();
+        }
+    }
+}

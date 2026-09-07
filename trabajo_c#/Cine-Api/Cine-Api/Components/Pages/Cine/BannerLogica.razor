@@ -1,0 +1,30 @@
+﻿@using System.Net.Http.Json
+@using Cine_Api.Components.Pages.Cine.classe
+
+@inject HttpClient Http
+
+@code
+{
+    [Parameter]
+    public EventCallback<List<Pelicula>> OnBannerCargado { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var resultado = await Http.GetFromJsonAsync<List<Pelicula>>(
+                "api/Pelicula"
+            );
+
+            if (resultado != null && resultado.Count > 0)
+            {
+                var destacadas = resultado.Take(3).ToList();
+                await OnBannerCargado.InvokeAsync(destacadas);
+            }
+        }
+        catch (Exception error)
+        {
+            Console.WriteLine(error.Message);
+        }
+    }
+}

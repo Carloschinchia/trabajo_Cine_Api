@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "r6sEh/ouJ7k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Carlo\\OneDrive\\Imágenes\\Sena\\c#\\Cine-Api\\Cine-Api\\Cine-Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Carlo\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.11\\microsoft.aspnetcore.app.internal.assets.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

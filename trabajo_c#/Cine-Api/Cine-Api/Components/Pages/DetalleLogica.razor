@@ -1,0 +1,32 @@
+﻿@using System.Net.Http.Json
+@using Cine_Api.Components.Pages.Cine.classe
+
+@inject HttpClient Http
+
+@code
+{
+    [Parameter]
+    public int PeliculaId { get; set; }
+
+    [Parameter]
+    public EventCallback<Pelicula> OnPeliculaCargada { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var resultado = await Http.GetFromJsonAsync<Pelicula>(
+                $"api/Pelicula/{PeliculaId}"
+            );
+
+            if (resultado != null)
+            {
+                await OnPeliculaCargada.InvokeAsync(resultado);
+            }
+        }
+        catch (Exception error)
+        {
+            Console.WriteLine(error.Message);
+        }
+    }
+}

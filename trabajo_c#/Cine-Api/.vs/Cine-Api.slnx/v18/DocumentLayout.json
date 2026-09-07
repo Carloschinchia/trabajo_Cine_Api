@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\cine-api\\cine-api\\components\\pages\\cine\\peliculas.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|solutionrelative:cine-api\\components\\pages\\cine\\peliculas.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\cine-api\\cine-api\\components\\pages\\detallepelicula.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|solutionrelative:cine-api\\components\\pages\\detallepelicula.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\cine-api\\cine-api\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|solutionrelative:cine-api\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\cine-api\\cine-api\\components\\pages\\detallepelicula.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|solutionrelative:cine-api\\components\\pages\\detallepelicula.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\cine-api\\cine-api\\components\\pages\\cine\\peliculas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98504452-E9FD-DBBB-228C-792851CD8919}|Cine-Api\\Cine-Api.csproj|solutionrelative:cine-api\\components\\pages\\cine\\peliculas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "Cine-Api\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\wwwroot\\app.css",
+              "RelativeToolTip": "Cine-Api\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-04T13:31:27.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetallePelicula.razor.css",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\DetallePelicula.razor.css",
+              "RelativeDocumentMoniker": "Cine-Api\\Components\\Pages\\DetallePelicula.razor.css",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\DetallePelicula.razor.css",
+              "RelativeToolTip": "Cine-Api\\Components\\Pages\\DetallePelicula.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-04T08:58:40.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetallePelicula.razor",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\DetallePelicula.razor",
+              "RelativeDocumentMoniker": "Cine-Api\\Components\\Pages\\DetallePelicula.razor",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\DetallePelicula.razor",
+              "RelativeToolTip": "Cine-Api\\Components\\Pages\\DetallePelicula.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T08:54:20.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Peliculas.razor.css",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor.css",
+              "RelativeDocumentMoniker": "Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor.css",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor.css",
+              "RelativeToolTip": "Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor.css",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-04T07:55:04.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Peliculas.razor",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor",
+              "RelativeDocumentMoniker": "Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\Cine-Api\\Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor",
+              "RelativeToolTip": "Cine-Api\\Components\\Pages\\Cine\\Peliculas.razor",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwJMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T07:52:11.52Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

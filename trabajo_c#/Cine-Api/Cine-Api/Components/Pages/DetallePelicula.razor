@@ -1,0 +1,50 @@
+﻿@page "/pelicula/{Id:int}"
+@rendermode InteractiveServer
+@using Cine_Api.Components.Pages.Cine.classe
+@inject NavigationManager Navigation
+
+<DetalleLogica PeliculaId="Id" OnPeliculaCargada="CargarPelicula" />
+<link rel="stylesheet" href="TuProyecto.styles.css" />
+
+@if (pelicula == null)
+{
+    <div class="cargando">
+        <div class="spinner"></div>
+        <p>Cargando película...</p>
+    </div>
+}
+else
+{
+    <div class="detalle-container">
+        <button class="btn-volver" @onclick="Volver">Volver</button>
+
+        <div class="detalle-card">
+            <div class="detalle-imagen">
+                <img src="@pelicula.Imagen" alt="@pelicula.Nombre" />
+            </div>
+            <div class="detalle-info">
+                <h1>@pelicula.Nombre</h1>
+                <p class="detalle-precio">$@pelicula.Precio</p>
+                <p class="detalle-descripcion">@pelicula.Descrision</p>
+            </div>
+        </div>
+    </div>
+}
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; }
+
+    private Pelicula? pelicula;
+
+    private void CargarPelicula(Pelicula datos)
+    {
+        pelicula = datos;
+    }
+
+    private void Volver()
+    {
+        Navigation.NavigateTo("/peliculas");
+    }
+}

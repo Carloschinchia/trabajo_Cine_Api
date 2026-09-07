@@ -1,0 +1,89 @@
+﻿@page "/"
+@page "/login"
+@rendermode InteractiveServer
+@layout LayaoutVacio
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<div class="login-container">
+
+    <div class="login">
+
+        <div class="login-icon">
+        </div>
+
+        <h1>Cine Colombia</h1>
+
+        <p>Inicia sesión para continuar</p>
+
+        <div class="grupo_formulario">
+
+            <label>Correo</label>
+
+            <input type="email"
+                   @bind="correo"
+                   placeholder="Ingresa tu correo" />
+
+        </div>
+
+        <div class="grupo_formulario">
+
+            <label>Contraseña</label>
+
+            <input type="password"
+                   @bind="contraseña"
+                   placeholder="Ingresa tu contraseña" />
+
+        </div>
+
+        @if (!string.IsNullOrEmpty(mensaje))
+        {
+            <div class="mensaje">
+                @mensaje
+            </div>
+        }
+
+        <button @onclick="IniciarSesion">
+            Iniciar sesión
+        </button>
+         
+        <hr/>
+        <a href="/registro">¿Crear cuenta?</a>
+
+    </div>
+
+</div>
+
+@code {
+
+    private string correo = "";
+    private string contraseña = "";
+
+    private string mensaje = "";
+
+    private async Task IniciarSesion()
+    {
+        mensaje = "";
+
+        var datos = new
+        {
+            correo = correo,
+            contraseña = contraseña
+        };
+
+        var respuesta = await Http.PostAsJsonAsync(
+            "api/Usuario/login",
+            datos
+        );
+
+        if (respuesta.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/peliculas");
+        }
+        else
+        {
+            mensaje = "Correo o contraseña incorrectos.";
+        }
+    }
+}
+

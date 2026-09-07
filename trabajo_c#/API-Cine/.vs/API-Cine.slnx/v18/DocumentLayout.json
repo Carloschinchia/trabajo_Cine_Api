@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\api-cine\\api-cine\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|solutionrelative:api-cine\\controllers\\peliculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\api-cine\\api-cine\\models\\solicitudlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|solutionrelative:api-cine\\models\\solicitudlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\api-cine\\api-cine\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|solutionrelative:api-cine\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\api-cine\\api-cine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|solutionrelative:api-cine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|c:\\users\\carlo\\onedrive\\im\u00E1genes\\sena\\c#\\api-cine\\api-cine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540CF36E-3275-78E4-CC3C-0231D0616604}|API-Cine\\API-Cine.csproj|solutionrelative:api-cine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SolicitudLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Models\\SolicitudLogin.cs",
+              "RelativeDocumentMoniker": "API-Cine\\Models\\SolicitudLogin.cs",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Models\\SolicitudLogin.cs",
+              "RelativeToolTip": "API-Cine\\Models\\SolicitudLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T15:02:20.174Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PeliculaController.cs",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Controllers\\PeliculaController.cs",
+              "RelativeDocumentMoniker": "API-Cine\\Controllers\\PeliculaController.cs",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Controllers\\PeliculaController.cs",
+              "RelativeToolTip": "API-Cine\\Controllers\\PeliculaController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwBoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T00:08:01.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Models\\Pelicula.cs",
+              "RelativeDocumentMoniker": "API-Cine\\Models\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Models\\Pelicula.cs",
+              "RelativeToolTip": "API-Cine\\Models\\Pelicula.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T01:58:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Program.cs",
+              "RelativeDocumentMoniker": "API-Cine\\Program.cs",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\Program.cs",
+              "RelativeToolTip": "API-Cine\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T00:30:08.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\appsettings.json",
+              "RelativeDocumentMoniker": "API-Cine\\appsettings.json",
+              "ToolTip": "C:\\Users\\Carlo\\OneDrive\\Im\u00E1genes\\Sena\\c#\\API-Cine\\API-Cine\\appsettings.json",
+              "RelativeToolTip": "API-Cine\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-02T00:27:50.322Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

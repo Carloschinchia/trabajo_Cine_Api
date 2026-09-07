@@ -1,0 +1,150 @@
+﻿@page "/peliculas"
+@rendermode InteractiveServer
+@inject HttpClient http
+@inject NavigationManager Navigation
+@using Cine_Api.Components.Pages.Cine.classe
+@implements IDisposable
+
+<BannerLogica OnBannerCargado="CargarBanner" />
+
+@if (peliculasBanner != null && peliculasBanner.Count > 0)
+{
+    <div class="banner-hero">
+        <div class="banner-slides">
+            @for (int i = 0; i < peliculasBanner.Count; i++)
+            {
+                var index = i;
+                <div class="banner-slide @(index == slideActual ? "activo" : "")">
+                    <img src="@peliculasBanner[index].Imagen"
+                         loading="lazy"
+                         referrerpolicy="no-referrer" />
+                    <div class="banner-overlay"></div>
+                </div>
+            }
+        </div>
+
+        <div class="banner-dots">
+            @for (int i = 0; i < peliculasBanner.Count; i++)
+            {
+                var index = i;
+                <button class="banner-dot @(index == slideActual ? "activo" : "")"
+                        @onclick="() => IrASlide(index)"></button>
+            }
+        </div>
+    </div>
+}
+
+<Logicapeli OnPeliculasCargadas="CargarPeliculas" />
+
+<div class="filtro-container">
+    <input type="text"
+           class="filtro-input"
+           placeholder="Buscar película por nombre..."
+           value="@filtro"
+           @oninput="FiltrarPeliculas" />
+</div>
+
+@if (peliculas == null)
+{
+    <div class="cargando">
+        <div class="spinner"></div>
+        <p>Cargando películas...</p>
+    </div>
+}
+else if (peliculas.Count == 0)
+{
+    <div class="sin-peliculas">
+        <h2>No hay películas</h2>
+        <p>No se encontraron películas disponibles.</p>
+    </div>
+}
+else if (peliculasFiltradas.Count == 0)
+{
+    <div class="sin-peliculas">
+        <h2>No hay resultados</h2>
+        <p>Ninguna película coincide con "@filtro".</p>
+    </div>
+}
+else
+{
+    <div class="peliculas-grid">
+        @foreach (var pelicula in peliculasFiltradas)
+        {
+            <div class="pelicula-card" @onclick="() => VerDetalle(pelicula.Id)">
+                <div class="imagen-container">
+                    <img src="@pelicula.Imagen"
+                         loading="lazy"
+                         referrerpolicy="no-referrer" />
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code
+{
+    private List<Pelicula>? peliculas;
+    private string filtro = "";
+
+    private void CargarPeliculas(List<Pelicula> datos)
+    {
+        peliculas = datos;
+    }
+
+    private List<Pelicula> peliculasFiltradas =>
+        string.IsNullOrWhiteSpace(filtro)
+            ? peliculas ?? new List<Pelicula>()
+            : (peliculas ?? new List<Pelicula>())
+                .Where(p => p.Nombre.StartsWith(filtro, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+    private void FiltrarPeliculas(ChangeEventArgs e)
+    {
+        filtro = e.Value?.ToString() ?? "";
+    }
+
+    // ---- Banner ----
+    private List<Pelicula>? peliculasBanner;
+    private int slideActual = 0;
+    private System.Threading.Timer? temporizador;
+
+    private void CargarBanner(List<Pelicula> datos)
+    {
+        peliculasBanner = datos;
+        IniciarAutoRotacion();
+    }
+
+    private void IniciarAutoRotacion()
+    {
+        temporizador = new System.Threading.Timer(_ =>
+        {
+            InvokeAsync(() =>
+            {
+                SiguienteSlide();
+                StateHasChanged();
+            });
+        }, null, 5000, 5000);
+    }
+
+    private void SiguienteSlide()
+    {
+        if (peliculasBanner == null) return;
+        slideActual = (slideActual + 1) % peliculasBanner.Count;
+    }
+
+    private void IrASlide(int index)
+    {
+        slideActual = index;
+    }
+
+    public void Dispose()
+    {
+        temporizador?.Dispose();
+    }
+
+    private void VerDetalle(int id)
+    {
+        Navigation.NavigateTo($"/pelicula/{id}");
+    }
+}
